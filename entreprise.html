@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zéro Corvée · Ton projet</title>
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+  <main class="wrap" data-quiz>
+    <header class="top">
+      <a class="logo" href="index.html"><span data-robot="yellow"></span><span data-brand></span></a>
+      <a class="back" href="index.html" data-back>← Retour</a>
+    </header>
+    <div class="progress"><span></span><span></span><span></span></div>
+
+    <section class="step" data-key="taille">
+      <p class="label">Ta boîte</p>
+      <h1>Combien de personnes travaillent dans ton entreprise ?</h1>
+      <div class="opts">
+        <button class="opt" data-value="Seul">Je suis seul</button>
+        <button class="opt" data-value="2 à 10">2 à 10</button>
+        <button class="opt" data-value="11 à 25">11 à 25</button>
+        <button class="opt" data-value="Plus de 25">Plus de 25</button>
+      </div>
+    </section>
+
+    <section class="step" data-key="besoin">
+      <p class="label">Ton besoin</p>
+      <h1>Qu'est-ce qui te prend le plus de temps ?</h1>
+      <div class="opts">
+        <button class="opt" data-value="Mes mails">Mes mails<small>Trier, répondre, relancer.</small></button>
+        <button class="opt" data-value="Mes devis et l'admin">Mes devis et l'admin<small>Devis, factures, relances clients.</small></button>
+        <button class="opt" data-value="Mon site">Mon site<small>Je n'en ai pas, ou il ne vend pas.</small></button>
+        <button class="opt" data-value="Un jeu ou des scripts">Un jeu ou des scripts<small>Roblox, automatisations, petits outils.</small></button>
+      </div>
+    </section>
+
+    <section class="step" data-key="contact">
+      <p class="label">Dernière étape</p>
+      <h1>On en parle ?</h1>
+      <p class="lead" style="margin-top:-12px">Tu me dis ce qui te prend du temps, je te montre ce qu'un agent peut reprendre en premier.</p>
+      <div class="quote">Exemple : trier et préparer les réponses à 50 mails, ça prenait <s>une heure chaque matin</s>. Un agent le fait pendant que tu bois ton café : il ne te reste qu'à <strong>relire et valider</strong>.</div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <img class="avatar" src="img/avatar.jpg" alt="">
+          <h3>Premier échange, sans engagement</h3>
+        </div>
+        <div class="summary"></div>
+        <form>
+          <label class="field"><span>Ton prénom</span><input name="nom" required autocomplete="given-name"></label>
+          <label class="field"><span>Ton e-mail</span><input name="email" type="email" required autocomplete="email" placeholder="ton@email.fr"></label>
+          <label class="field"><span>En deux mots, ce que tu aimerais automatiser</span><textarea name="message" placeholder="Ex. : je passe 1 h par jour à répondre aux demandes de devis."></textarea></label>
+          <button class="btn block" type="submit">Envoyer ma demande</button>
+          <p class="or"><a data-calendly href="#" target="_blank" rel="noopener">Ou choisis directement un créneau</a></p>
+          <p class="or">Tu préfères Instagram ? <a data-instagram href="#" target="_blank" rel="noopener">Écris-moi en message</a></p>
+        </form>
+        <div class="ok">C'est envoyé ! Je te réponds très vite pour fixer un moment ensemble.</div>
+      </div>
+    </section>
+  </main>
+  <script src="config.js?v=6"></script>
+  <script src="app.js?v=6"></script>
+</body>
+</html>
